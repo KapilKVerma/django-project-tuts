@@ -1,0 +1,13 @@
+{% extends 'base.html'%} {%block content%}
+<h1>About Page</h1>
+
+<p>{{ service_text }}
+<h5>{{service_number}}</h5></p>
+
+<h6>Service provides to:</h6>
+<ul>
+{% for service in services%}
+<li>{{ service }}</li>
+{%endfor%}
+</ul>
+{%endblock%}
