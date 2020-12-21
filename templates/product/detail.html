@@ -4,5 +4,6 @@
 <h6>Name</h6>
 {{ object.title}}</p>
 <h6>Description</h6>
-<h5>{% if description%}{{ object.description}}{% else %}Coming Soon...{% endif %}</h5>
+<h5>{{ object.description}}.</h5>
+<h6>$ {{object.price}}</h6>
 {%endblock%}
